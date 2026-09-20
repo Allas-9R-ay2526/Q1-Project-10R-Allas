@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Project</title>
+</head>
+<body>
+   <div style="font-size: 30px; background-color: cadetblue; padding: 15px; margin: auto; width: 580px;">
+
+    <spript type="py" src="main.py"></spript>   
+   <h2>SKU Genarator</h2> 
+    <label>Product Category:</label><br> 
+    <input type="text" id="category" placeholder="Enter a number"><br>
+    <label>Product:</label><br>
+    <input type="text" id="product"><br>
+    <label>Stock Quantity:</label><br>
+    <input type="text" id="stock" placeholder="Enter a number"><br>
+    <button type="submit" py-click="adding_numbers">Get Total</button><br><br>
+    <div id="output1"></div>
+     
+    <h2>Receipt Genarator</h2>
+    <label>Drinks</label><br>
+    <select id="drink">
+        <option value="20">Coffee - 20</option>
+        <option value="25">Soda - 25</option>
+    </select><br>
+        
+    <label>Food</label><br>
+    <select id="food">
+        <option value="30">Fries - 30</option>
+        <option value="45">Hot Dog - 45</option>
+        <option value="50">Hamburger - 50</option>
+    </select><br>
+
+    <button type="submit" pyclick="create_order">Create Order</button><br><br>
+
+    <div id="show"></div>
+
+    </div>
+</body>
+</html>
